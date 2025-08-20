@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies for client..."
+      - cd client
+      - npm install
+      - cd ../server
+      - echo "Installing dependencies for server..."
+      - npm install
+      - cd ..
+  build:
+    commands:
+      - echo "Building frontend..."
+      - cd client
+      - npm run build
+      - cd ..
+artifacts:
+  files:
+    - client/build/**/*
+    - server/**/*
+    - appspec.yml
+    - scripts/**/*
+    - buildspec.yml
+  discard-paths: no
