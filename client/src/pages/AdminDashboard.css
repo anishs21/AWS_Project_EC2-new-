@@ -1,0 +1,138 @@
+/* src/pages/AdminDashboard.css */
+
+.dashboard-wrapper {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #264653;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dashboard-header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.welcome-text {
+  font-size: 16px;
+}
+
+.logout-button {
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard-content {
+  margin-top: 30px;
+}
+
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 300px;
+  font-size: 14px;
+}
+
+.export-btn {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dashboard-summary {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.enquiry-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.enquiry-table th,
+.enquiry-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.enquiry-table th {
+  background-color: #e9ecef;
+}
+
+.no-data {
+  text-align: center;
+  color: gray;
+  padding: 20px;
+}
+
+.loader {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+}
+
+/* Additional columns */
+.enquiry-table th:nth-child(6),
+.enquiry-table td:nth-child(6),
+.enquiry-table th:nth-child(7),
+.enquiry-table td:nth-child(7) {
+  white-space: nowrap;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .export-btn {
+    width: 100%;
+  }
+} 

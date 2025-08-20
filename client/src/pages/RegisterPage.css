@@ -1,0 +1,91 @@
+/* src/pages/RegisterPage.css */
+
+.register-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fb923c;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.home-button {
+  background-color: white;
+  color: #fb923c;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #ffe4cc;
+}
+
+.register-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  margin-top: 50px;
+}
+
+.register-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.register-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-card input,
+.register-card select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.register-card button {
+  background-color: #fb923c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-card button:hover {
+  background-color: #fb923c;
+}
+
+.register-card .error {
+  color: orange;
+  font-size: 13px;
+  margin-top: -10px;
+}

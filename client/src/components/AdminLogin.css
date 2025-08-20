@@ -1,0 +1,163 @@
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative; 
+
+}
+
+.login-left {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-illustration {
+  width: 75%;
+  max-width: 500px;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  text-align: center;
+}
+
+.login-logo {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fb923c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #fb923c;
+}
+
+.login-links {
+  margin-top: 15px;
+}
+
+.login-links a {
+  display: block;
+  color: #fb923c;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+.switch-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fb923c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.switch-button:hover {
+  background-color: #fb923c;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-link a {
+  color: #fb923c;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fb923c;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-button {
+  background-color: white;
+  color: #fb923c;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #ffe4cc;
+}

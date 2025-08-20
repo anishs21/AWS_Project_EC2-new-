@@ -1,0 +1,187 @@
+.client-login-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative; 
+}
+
+.client-left {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-illustration {
+  width: 80%;
+  max-width: 550px;
+}
+
+.client-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.client-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.client-logo {
+  width: 65px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #222;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+form {
+  text-align: left;
+}
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #197278;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #145a5f;
+}
+
+.client-links {
+  margin-top: 15px;
+}
+
+.client-links a {
+  display: block;
+  color: #197278;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+
+.switch-button {
+  position: absolute; 
+  top: 20px;
+  right: 20px;
+  background-color: #24936e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.switch-button:hover {
+  background-color: #1e7a5a;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* ✅ Navbar styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #197278;
+  color: white;
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar-left {
+  font-size: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: space-between;
+  
+  gap: 15px;
+}
+
+.home-button,
+.switch-button {
+  background-color: white;
+  color: #197278;
+  border: none;
+  padding: 8px 10px;
+  
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover,
+.switch-button:hover {
+  background-color: #d3f0ee;
+}
+
+.client-login-wrapper {
+  margin-top: 80px;
+  display: flex;
+  height: calc(100vh - 80px); /* subtract navbar height */
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
