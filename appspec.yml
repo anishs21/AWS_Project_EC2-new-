@@ -1,18 +1,10 @@
 version: 0.0
 os: linux
-files:
-  - source: client/
-    destination: /home/ssm-user/AWS-project/AWS_Project_EC2/client
-  - source: server/
-    destination: /home/ssm-user/AWS-project/AWS_Project_EC2/server
+files: []   # No file copy needed; we only run the script
 
 hooks:
-  AfterInstall:
-    - location: scripts/after_install.sh
-      runas: ssm-user
-      timeout: 300
-
   ApplicationStart:
-    - location: scripts/application_start.sh
+    - location: scripts/deploy.sh
       runas: ssm-user
-      timeout: 60
+      timeout: 600
+
